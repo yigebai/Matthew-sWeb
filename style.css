@@ -5,6 +5,13 @@ body {
   margin: 2em;
   width: 100%;
   height: 100%;
+  background-image: url(TeddyBear.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  background-color: transparent: 50%;
+
+
 }
 
 h1 {
@@ -16,6 +23,7 @@ h1 {
   margin-top:0;
 }
 h2 {
+  color:#2ecc71;
   font-size: 18pt;
 /*   margin-top:0; */
 }
@@ -36,9 +44,11 @@ button {
 }
 
 p {
+  color:#34495e;
   font-size: 12pt;
   line-height: 18pt;
 }
+
 
 .left { /* <--这个绿点是同一的格式； #是一个ID 可以 通过ID = “woxjasdqawd”来唤起 */
   width: 15%;
@@ -86,6 +96,7 @@ ul {
 
 li {
   font-size: 12pt;
+  color:#34495e;
   list-style-type: none;
   padding-bottom: 1em;
 }
@@ -97,11 +108,11 @@ li.bullet {
 }
 
 li.bullet a {
-  color: blue;
+  color: #3498db;
 }
 
 li a {
-  color: black;
+  color: #34495e;
   /*   text-decoration: none; */
 }
 
@@ -237,4 +248,10 @@ body .gist .gist-meta {
 
 .nav{
   display: none;
+}
+
+.content-image {
+  width: 200%;
+  height: 100%;
+  align-self: center;
 }
