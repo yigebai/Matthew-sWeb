@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Matthew Bai | Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+       <div class="menu-icon" onclick="toggleSidebar()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <h1>Matthew Bai's Portfolio</h1>
+    </header>
+    </header>
+
+    <!-- 侧边栏菜单开始 -->
+    <nav class="sidebar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aLittleBlueFlower.html">A little blue flower</a></li>
+            <li><a href="findingALostTeddyBear.html">Finding a lost Teddy Bear</a></li>
+            <li><a href="oneMinuteWorld.html">One Minute World</a></li>
+            <li><a href="variableSerialsOne.html">Variable Serials One</a></li>
+            <li><a href="variableSerialsTwo.html">Variable Serials Two</a></li>
+            <li><a href="variableSerialsThree.html">Variable Serials Three</a></li>
+            <li><a href="robot_NuNuAndIt‘sExquisiteCorpse.html">Robot：NuNu &&It‘s Exquisite Corpse</a></li>
+            <li><a href="opticalIllusions.html">Optical Illusions</a></li>
+            <li><a href="dataPortrait.html">Data Portrait</a></li>
+            <li><a href="jumpingEyes.html">Jumping Eyes</a></li>
+            <!-- 更多项目链接 -->
+        </ul>
+    </nav>
+    <!-- 侧边栏菜单结束 -->
+
+    <div class="container">
+        <!-- Project iframe -->
+            <h2>Variable Serials Two</h2>
+            <div style="overflow: hidden; width: 400px; height: 450px; resize: none;">
+                <iframe src="https://editor.p5js.org/ybai34/full/yfXlCCBYS" style="border: none; width: 100%; height: 100%;"></iframe>
+            </div>
+
+            <article>
+                <h2>Description</h2>
+                <p>
+           This p5.js project creates an interactive graphics grid consisting of a 20x20 rectangular or elliptical array. Through the loop in the draw function, a series of regularly arranged graphics are drawn on the canvas. When the mouse is close to these graphics, their color changes, creating a dynamic visual effect. Additionally, the project includes a changeShape function for switching between rectangles and ellipses, adding visual variety. The sizeChange function controls the size change of the graphics and adjusts the size of the graphics according to the duration of the mouse click, thereby allowing direct interaction between the audience and the work.
+            </p>
+                <h2>Reflection</h2>
+                <p>
+            This work shows how to use p5.js to create interactive and dynamically changing graphics. Writing code to control the shape, color, and size changes of graphics is a fun challenge.By regularly switching between different shapes, the work provides a constantly changing visual experience. At the same time, the design that responds to mouse events allows viewers to interact with the work through simple actions, making the entire experience more engaging and participatory. 
+                 </p>
+            </article>
+        <!-- Portfolio content -->
+    </div>
+    <footer>
+        <p>Matthew's artwork takes a critical view of social, political, and cultural issues. Matthew references public issues, exploring the contradictions between humanity, nature, and science.</p>
+        <p>
+ybai34@pratt.edu&copy; 2023 Matthew Bai</p>
+    </footer>
+
+    <script>
+        // JavaScript for the sidebar
+        const sidebar = document.querySelector('.sidebar');
+        document.addEventListener('mousemove', (e) => {
+            if (e.pageX < 250) { // If mouse is within 50px of the left edge
+                sidebar.style.left = '0';
+            } else {
+                sidebar.style.left = '-250px'; // Adjust as per sidebar width
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Matthew Bai | Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+       <div class="menu-icon" onclick="toggleSidebar()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <h1>Matthew Bai's Portfolio</h1>
+    </header>
+    </header>
+
+    <!-- 侧边栏菜单开始 -->
+    <nav class="sidebar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aLittleBlueFlower.html">A little blue flower</a></li>
+            <li><a href="findingALostTeddyBear.html">Finding a lost Teddy Bear</a></li>
+            <li><a href="oneMinuteWorld.html">One Minute World</a></li>
+            <li><a href="variableSerialsOne.html">Variable Serials One</a></li>
+            <li><a href="variableSerialsTwo.html">Variable Serials Two</a></li>
+            <li><a href="variableSerialsThree.html">Variable Serials Three</a></li>
+            <li><a href="robot_NuNuAndIt‘sExquisiteCorpse.html">Robot：NuNu &&It‘s Exquisite Corpse</a></li>
+            <li><a href="opticalIllusions.html">Optical Illusions</a></li>
+            <li><a href="dataPortrait.html">Data Portrait</a></li>
+            <li><a href="jumpingEyes.html">Jumping Eyes</a></li>
+            <!-- 更多项目链接 -->
+        </ul>
+    </nav>
+    <!-- 侧边栏菜单结束 -->
+
+    <div class="container">
+        <!-- Project iframe -->
+            <h2>A little blue flower</h2>
+            <div style="overflow: hidden; width: 100%; height: 500px; resize: none;">
+                <iframe src="https://editor.p5js.org/ybai34/full/wcLfqIIYG" style="border: none; width: 100%; height: 100%;"></iframe>
+            </div>
+
+            <article>
+                <h2>Description</h2>
+                <p>
+                    This is a small project about converting natural language into computer language. The natural language description of my partner Gracie is as follows. The image I converted into p5js is as shown.
+                </p>
+                <ul>
+                    <li>create a 1x2 vertical yellow rectangle</li>
+                    <li>create a 1x3 vertical blue rectangle above and below this</li>
+                    <li>create 3 x 2 horizontal blue rectangle on the left and right of the yellow rectangle</li>
+                    <li>create 2 x 2 squares in a lighter blue in between the horizontal and vertical rectangles</li>
+                    <li>create a 1 x 7 horizontal rectangle below the shape in green</li>
+                </ul>
+                <h2>Reflection</h2>
+                <p>
+                    Code is a kind of transition from languages to language. As I said in the first class: When I was young, my friend and I create a kind of "new" sign language. The aim of the this language is to decrease the time spent on our games. However, for people didn't know  it, they need time to learn and use it. Code, from my prospective, is a specific and higher efficiency language on a specific flied.The advantage of natural language is that it is concise and easy to understand. But it requires a lot of acquired training to understand. For example, to draw a square, you must first learn what a square is. The language of p5js is a traditional computer language. It has its own set of rules. For example, to draw a square, you need to know its coordinates, length and width, and display it using the rect() method.
+                </p>
+            </article>
+        <!-- Portfolio content -->
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Matthew Bai</p>
+    </footer>
+
+    <script>
+        // JavaScript for the sidebar
+        const sidebar = document.querySelector('.sidebar');
+        document.addEventListener('mousemove', (e) => {
+            if (e.pageX < 250) { // If mouse is within 50px of the left edge
+                sidebar.style.left = '0';
+            } else {
+                sidebar.style.left = '-250px'; // Adjust as per sidebar width
+            }
+        });
+    </script>
+</body>
+
+</html>

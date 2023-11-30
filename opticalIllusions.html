@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Matthew Bai | Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+       <div class="menu-icon" onclick="toggleSidebar()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <h1>Matthew Bai's Portfolio</h1>
+    </header>
+    </header>
+
+    <!-- 侧边栏菜单开始 -->
+    <nav class="sidebar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aLittleBlueFlower.html">A little blue flower</a></li>
+            <li><a href="findingALostTeddyBear.html">Finding a lost Teddy Bear</a></li>
+            <li><a href="oneMinuteWorld.html">One Minute World</a></li>
+            <li><a href="variableSerialsOne.html">Variable Serials One</a></li>
+            <li><a href="variableSerialsTwo.html">Variable Serials Two</a></li>
+            <li><a href="variableSerialsThree.html">Variable Serials Three</a></li>
+            <li><a href="robot_NuNuAndIt‘sExquisiteCorpse.html">Robot：NuNu &&It‘s Exquisite Corpse</a></li>
+            <li><a href="opticalIllusions.html">Optical Illusions</a></li>
+            <li><a href="dataPortrait.html">Data Portrait</a></li>
+            <li><a href="jumpingEyes.html">Jumping Eyes</a></li>
+            <!-- 更多项目链接 -->
+        </ul>
+    </nav>
+    <!-- 侧边栏菜单结束 -->
+
+    <div class="container">
+        <!-- Project iframe -->
+            <h2>Optical Illusions</h2>
+            <div style="overflow: hidden; width: 600px; height: 650px; resize: none;">
+                <iframe src="https://editor.p5js.org/ybai34/full/bucsuD2Jg" style="border: none; width: 100%; height: 100%;"></iframe>
+            </div>
+
+            <article>
+                <h2>Description</h2>
+                <p>
+           "Optical Illusion" is a dynamic visual art work that uses p5.js to generate a particle system composed of multiple rectangles. Each particle creates an optical illusion by changing its position and color. The movement of particles is affected by keyboard input (up, down, left, and right arrow keys), allowing the user to change the direction of particle movement through these arrow keys. Additionally, the constant changing of the background and particles creates a flowing and pulsating effect that further enhances the optical illusion. The particle system uses Perlin noise to generate motion paths, making particle motion look more natural and smooth.
+            </p>
+                <h2>Reflection</h2>
+                <p>
+            This work demonstrates the power of p5.js in creating optical illusions and motion graphics. Through carefully designed animation and color changes, the work creates a visual experience that captures the viewer's gaze and arouses curiosity. The project is an exploration of motion graphics, user interaction and optical illusions, showcasing the fusion of creativity and technology in digital art.
+                 </p>
+            </article>
+        <!-- Portfolio content -->
+    </div>
+    <footer>
+        <p>Matthew's artwork takes a critical view of social, political, and cultural issues. Matthew references public issues, exploring the contradictions between humanity, nature, and science.</p>
+        <p>
+ybai34@pratt.edu&copy; 2023 Matthew Bai</p>
+    </footer>
+
+    <script>
+        // JavaScript for the sidebar
+        const sidebar = document.querySelector('.sidebar');
+        document.addEventListener('mousemove', (e) => {
+            if (e.pageX < 250) { // If mouse is within 50px of the left edge
+                sidebar.style.left = '0';
+            } else {
+                sidebar.style.left = '-250px'; // Adjust as per sidebar width
+            }
+        });
+    </script>
+</body>
+
+</html>

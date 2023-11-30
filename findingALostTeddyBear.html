@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Matthew Bai | Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+       <div class="menu-icon" onclick="toggleSidebar()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <h1>Matthew Bai's Portfolio</h1>
+    </header>
+    </header>
+
+    <!-- 侧边栏菜单开始 -->
+    <nav class="sidebar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aLittleBlueFlower.html">A little blue flower</a></li>
+            <li><a href="findingALostTeddyBear.html">Finding a lost Teddy Bear</a></li>
+            <li><a href="oneMinuteWorld.html">One Minute World</a></li>
+            <li><a href="variableSerialsOne.html">Variable Serials One</a></li>
+            <li><a href="variableSerialsTwo.html">Variable Serials Two</a></li>
+            <li><a href="variableSerialsThree.html">Variable Serials Three</a></li>
+            <li><a href="robot_NuNuAndIt‘sExquisiteCorpse.html">Robot：NuNu &&It‘s Exquisite Corpse</a></li>
+            <li><a href="opticalIllusions.html">Optical Illusions</a></li>
+            <li><a href="dataPortrait.html">Data Portrait</a></li>
+            <li><a href="jumpingEyes.html">Jumping Eyes</a></li>
+            <!-- 更多项目链接 -->
+        </ul>
+    </nav>
+    <!-- 侧边栏菜单结束 -->
+
+    <div class="container">
+        <!-- Project iframe -->
+            <h2>Finding a lost Teddy Bear</h2>
+            <div style="overflow: hidden; width: 650px; height: 650px; resize: none;">
+                <iframe src="https://editor.p5js.org/ybai34/full/8Fz7ykJlZ" style="border: none; width: 100%; height: 100%;"></iframe>
+            </div>
+
+            <article>
+                <h2>Description</h2>
+                <p>
+            This is a small project about converting natural language into computer language. The natural language description of My partner Nicole is as follows.In this project Nicole describes a teddy bear she lost. I was tasked with redrawing this lost teddy bear based on his natural language description (images not allowed). The image I converted into p5js is as shown.</p>
+            <p>A grey teddy bear with a round head, two ears, and a pair of button eyes, wears a slight smile and has two arms, two legs, no fingers or toes, and a round torso. The bear is also wearing a white tshirt with the words "it's a girl!" written in pink. Under the text on the tshirt is a picture of a classic yellow teddy bear.
+            </p>
+                <h2>Reflection</h2>
+                <p>
+             This was a very interesting project after drawing the teddy bear based on Nicole's description. I found this project to be largely inconsistent with missing items due to the lack of real-time feedback and communication. I think the process is a bit like the current AI that has not been trained with the LLam language model. If you ask it a question, it will answer the question based on its own imagination LOL.
+                 </p>
+            </article>
+        <!-- Portfolio content -->
+    </div>
+    <footer>
+        <p>Matthew's artwork takes a critical view of social, political, and cultural issues. Matthew references public issues, exploring the contradictions between humanity, nature, and science.</p>
+        <p>
+ybai34@pratt.edu&copy; 2023 Matthew Bai</p>
+    </footer>
+
+    <script>
+        // JavaScript for the sidebar
+        const sidebar = document.querySelector('.sidebar');
+        document.addEventListener('mousemove', (e) => {
+            if (e.pageX < 250) { // If mouse is within 50px of the left edge
+                sidebar.style.left = '0';
+            } else {
+                sidebar.style.left = '-250px'; // Adjust as per sidebar width
+            }
+        });
+    </script>
+</body>
+
+</html>

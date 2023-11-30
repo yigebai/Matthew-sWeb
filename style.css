@@ -1,92 +1,140 @@
-    <style>
-        body {
-            font-family: Roboto;
-            padding: 0;
-            background-color: #fff;
-        }
+<style>
+    body {
+        font-family: 'Roboto', sans-serif;
+        padding: 0;
+        background-color: #FAEAE1; /* 设置为温暖的背景色 */
+        color: #333; /* 色彩柔和 */
+        line-height: 1.6; /* 增加行高以改善可读性 */
+    }
 
-        header {
-            background-color: #000;
-            color: #fff;
-            padding: 20px;
+    header {
+        background-image: url('header-background.jpg'); /* 添加艺术风格的背景图 */
+        color: #FFFFFF;
+        padding: 40px 20px; /* 增加填充以给予更多空间 */
+        text-align: center;
+    }
 
-            text-align: center;
-        }
+    header h1 {
+        margin: 0;
+        font-size: 48px; /* 增大字号 */
+        font-family: 'Roboto', sans-serif;
+        letter-spacing: 4px; /* 增加字母间距 */
+        text-shadow: 2px 2px 4px #774545; /* 添加文本阴影以增加深度 */
+    }
 
-        header h1 {
-            margin: 0;
-            font-size: 36px;
-            
-            font-family: Roboto;
-            letter-spacing: 2px;
-        }
+    nav {
+        text-align: center;
+        margin-top: 20px;
+    }
 
-        nav {
-            text-align: center;
-            margin-top: 20px;
-        }
+    nav ul {
+        list-style: none;
+        padding: 0;
+    }
 
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
+    nav ul li {
+        display: inline;
+        margin: 0 15px;
+    }
 
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
+    nav ul li a {
+        text-decoration: none;
+        color: #FAEAE1; /* 设置链接颜色为背景色，以便它们在悬停时更加突出 */
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        transition: color 0.3s ease;
+    }
 
-        nav ul li a {
-            text-decoration: none;
-            color: #fff;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            transition: color 0.3s ease;
-        }
+    nav ul li a:hover {
+        color: #DAB6A0; /* 为链接悬停添加柔和的色调 */
+    }
 
-        nav ul li a:hover {
-            color: #000; /* Change to your desired highlight color */
-        }
+    .container {
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* 加深阴影以突出元素 */
+        border: solid 1px #DAB6A0; /* 添加边框颜色 */
+    }
 
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
+    .portfolio-item {
+        margin-bottom: 30px;
+        border: solid 1px #DAB6A0; /* 边框颜色与艺术风格相匹配 */
+        padding: 15px;
+        align-self: center;
+        background-color: #fff;
+        transition: transform 0.3s ease;
+    }
 
-        .portfolio-item {
-            margin-bottom: 20px;
-            border: 2px solid #000;
-            padding: 10px;
-            align-self: center;
-            background-color: #fff;
-            transition: transform 0.3s ease;
-        }
+    .portfolio-item:hover {
+        transform: translateY(-5px); /* 改变悬停效果 */
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* 悬停时增加阴影 */
+    }
 
-        .portfolio-item:hover {
-            transform: scale(1.05);
-        }
+    .portfolio-item p {
+        margin: 15px 0;
+        font-style: italic;
+        color: #774545; /* 评论颜色更暗，与艺术风格相符 */
+    }
+    .menu-icon {
+    display: block;
+    width: 30px; /* Menu icon width */
+    height: 25px; /* Menu icon height */
+    position: fixed;
+    top: 20px; /* Adjust as needed */
+    left: 20px; /* Adjust as needed */
+    z-index: 1001; /* Above the sidebar */
+    cursor: pointer;
+}
 
-        .portfolio-item img {
-            max-width: 100%;
-        }
+.menu-icon div {
+    background-color: #DAB6A0;
+    height: 4px;
+    margin: 5px 0;
+    transition: 0.3s;
+}
 
-        .portfolio-item p {
-            margin: 10px 0;
-            font-style: italic;
-            color: #555;
-        }
+.sidebar {
+    position: fixed;
+    left: -250px; /* Sidebar width */
+    top: 0;
+    bottom: 0;
+    width: 250px; /* Adjust to your preferred width */
+    background: #333;
+    transition: left 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55); /* This cubic-bezier creates the damping effect */
+    z-index: 1000;
 
-        .fulfill
+}
 
-        footer {
-            background-color: #fff;
-            color: #000;
-            text-align: center;
-            padding: 10px 0;
-        }
-    </style>
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li a {
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background: #444;
+}
+
+/* 页面主体内容的样式可能也需要调整 */
+
+
+
+    footer {
+        background-color: #DAB6A0; /* 页脚背景色 */
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+    }
+</style>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Matthew Bai | Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+       <div class="menu-icon" onclick="toggleSidebar()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <h1>Matthew Bai's Portfolio</h1>
+    </header>
+    </header>
+
+    <!-- 侧边栏菜单开始 -->
+    <nav class="sidebar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aLittleBlueFlower.html">A little blue flower</a></li>
+            <li><a href="findingALostTeddyBear.html">Finding a lost Teddy Bear</a></li>
+            <li><a href="oneMinuteWorld.html">One Minute World</a></li>
+            <li><a href="variableSerialsOne.html">Variable Serials One</a></li>
+            <li><a href="variableSerialsTwo.html">Variable Serials Two</a></li>
+            <li><a href="variableSerialsThree.html">Variable Serials Three</a></li>
+            <li><a href="robot_NuNuAndIt‘sExquisiteCorpse.html">Robot：NuNu &&It‘s Exquisite Corpse</a></li>
+            <li><a href="opticalIllusions.html">Optical Illusions</a></li>
+            <li><a href="dataPortrait.html">Data Portrait</a></li>
+            <li><a href="jumpingEyes.html">Jumping Eyes</a></li>
+            <!-- 更多项目链接 -->
+        </ul>
+    </nav>
+    <!-- 侧边栏菜单结束 -->
+
+    <div class="container">
+        <!-- Project iframe -->
+            <h2>Data Portrait：Footprints</h2>
+            <div style="overflow: hidden; width: 400px; height: 400px; resize: none;">
+                <iframe src="https://editor.p5js.org/ybai34/full/hfS08M8Wh" style="border: none; width: 100%; height: 100%;"></iframe>
+            </div>
+
+
+            <article>
+                <h2>Description</h2>
+                <p>
+         "Data Portrait：Footprints" is a data visualization work produced using p5.js, which records the number of windows opened by the author in Safari and Chrome browsers from October 19 to October 24, 2023. The work uses a dynamic gear pattern to represent daily browser usage. The size and position of each gear are generated through a random function, symbolizing the uncertainty and diversity in daily digital life. Click the arrows on the screen to switch between different days, showing the differences in data from day to day. The animation of these rotating gears not only adds visual interest, but also symbolizes the passage of time and the continuity of digital activity.
+            </p>
+                <h2>Reflection</h2>
+                <p>
+           A Browser Journey is a creative reflection on personal digital activity. By transforming abstract digital data into concrete visual elements, this work offers a novel way to examine and understand our online behavior. The randomness of each gear’s movement and position reflects the dynamics and variability of daily digital activities. Additionally, by allowing viewers to jump between days, the work provides an interactive way for viewers to more deeply explore the stories behind the data. This project demonstrates how programming and data visualization can be used to tell personal stories while also reminding us to pay attention to our digital footprints.
+                 </p>
+            </article>
+        <!-- Portfolio content -->
+    </div>
+    <footer>
+        <p>Matthew's artwork takes a critical view of social, political, and cultural issues. Matthew references public issues, exploring the contradictions between humanity, nature, and science.</p>
+        <p>
+ybai34@pratt.edu&copy; 2023 Matthew Bai</p>
+    </footer>
+
+    <script>
+        // JavaScript for the sidebar
+        const sidebar = document.querySelector('.sidebar');
+        document.addEventListener('mousemove', (e) => {
+            if (e.pageX < 250) { // If mouse is within 50px of the left edge
+                sidebar.style.left = '0';
+            } else {
+                sidebar.style.left = '-250px'; // Adjust as per sidebar width
+            }
+        });
+    </script>
+</body>
+
+</html>

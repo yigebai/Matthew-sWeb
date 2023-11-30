@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Matthew Bai | Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+       <div class="menu-icon" onclick="toggleSidebar()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <h1>Matthew Bai's Portfolio</h1>
+    </header>
+    </header>
+
+    <!-- 侧边栏菜单开始 -->
+    <nav class="sidebar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aLittleBlueFlower.html">A little blue flower</a></li>
+            <li><a href="findingALostTeddyBear.html">Finding a lost Teddy Bear</a></li>
+            <li><a href="oneMinuteWorld.html">One Minute World</a></li>
+            <li><a href="variableSerialsOne.html">Variable Serials One</a></li>
+            <li><a href="variableSerialsTwo.html">Variable Serials Two</a></li>
+            <li><a href="variableSerialsThree.html">Variable Serials Three</a></li>
+            <li><a href="robot_NuNuAndIt‘sExquisiteCorpse.html">Robot：NuNu &&It‘s Exquisite Corpse</a></li>
+            <li><a href="opticalIllusions.html">Optical Illusions</a></li>
+            <li><a href="dataPortrait.html">Data Portrait</a></li>
+            <li><a href="jumpingEyes.html">Jumping Eyes</a></li>
+            <!-- 更多项目链接 -->
+        </ul>
+    </nav>
+    <!-- 侧边栏菜单结束 -->
+
+    <div class="container">
+        <!-- Project iframe -->
+            <h2>One Minute World</h2>
+            <div style="overflow: hidden; width: 650px; height: 650px; resize: none;">
+                <iframe src="https://editor.p5js.org/ybai34/full/b4_o-fPyS" style="border: none; width: 100%; height: 100%;"></iframe>
+            </div>
+
+            <article>
+                <h2>Description</h2>
+                <p>
+            One Minute World will "dig" the maze every 60 seconds starting from the upper left corner and save it. The concept was inspired by ants digging their burrows. The author aims to digitize and record every minute.
+            </p>
+                <h2>Reflection</h2>
+                <p>
+            The passage of time cannot be touched. For some people, it is not easy to detect. The purpose of a clock is to visually display the passage of time. I have thought a lot about the ways to display time, including the conversion of the concept of time, such as time is money; including the conversion of time-space (Light cone), such as: spacetime diagram; last bu not the least, the ancient people's view of the length of time Different segmentations, such as timing via water droplets. What these time concepts have in common after being converted by p5js is that they all require a for loop to loop, so setting the unit of time is particularly important. So, how are time units divided? One second, one minute, one hour, or one day? Or some other way of partitioning?</p>
+            <p>This time I chose an approach similar to "<a href="https://p5js.org/examples/simulate-game-of-life.html">game of life</a>" and randomly created a world that lasted only one minute. And can save screenshots of each world.
+                 </p>
+            </article>
+        <!-- Portfolio content -->
+    </div>
+    <footer>
+        <p>Matthew's artwork takes a critical view of social, political, and cultural issues. Matthew references public issues, exploring the contradictions between humanity, nature, and science.</p>
+        <p>
+ybai34@pratt.edu&copy; 2023 Matthew Bai</p>
+    </footer>
+
+    <script>
+        // JavaScript for the sidebar
+        const sidebar = document.querySelector('.sidebar');
+        document.addEventListener('mousemove', (e) => {
+            if (e.pageX < 250) { // If mouse is within 50px of the left edge
+                sidebar.style.left = '0';
+            } else {
+                sidebar.style.left = '-250px'; // Adjust as per sidebar width
+            }
+        });
+    </script>
+</body>
+
+</html>

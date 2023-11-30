@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Matthew Bai | Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+       <div class="menu-icon" onclick="toggleSidebar()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <h1>Matthew Bai's Portfolio</h1>
+    </header>
+    </header>
+
+    <!-- 侧边栏菜单开始 -->
+    <nav class="sidebar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aLittleBlueFlower.html">A little blue flower</a></li>
+            <li><a href="findingALostTeddyBear.html">Finding a lost Teddy Bear</a></li>
+            <li><a href="oneMinuteWorld.html">One Minute World</a></li>
+            <li><a href="variableSerialsOne.html">Variable Serials One</a></li>
+            <li><a href="variableSerialsTwo.html">Variable Serials Two</a></li>
+            <li><a href="variableSerialsThree.html">Variable Serials Three</a></li>
+            <li><a href="robot_NuNuAndIt‘sExquisiteCorpse.html">Robot：NuNu &&It‘s Exquisite Corpse</a></li>
+            <li><a href="opticalIllusions.html">Optical Illusions</a></li>
+            <li><a href="dataPortrait.html">Data Portrait</a></li>
+            <li><a href="jumpingEyes.html">Jumping Eyes</a></li>
+            <!-- 更多项目链接 -->
+        </ul>
+    </nav>
+    <!-- 侧边栏菜单结束 -->
+
+    <div class="container">
+        <!-- Project iframe -->
+            <h2>Jumping Eyes</h2>
+            <div style="overflow: hidden; width: 800px; height: 450px; resize: none;"
+            >
+                <iframe allow="camera"
+                scrolling="no"
+                src="https://editor.p5js.org/ybai34/full/4XYnpzmaQ" style="border: none; width: 100%; height: 100%;"></iframe>
+            </div>
+
+
+            <article>
+                <h2>Description</h2>
+                <p>
+         "Jumping Eyes" is an interactive game inspired by Google's dinosaur game. It brings players a novel gaming experience by adding facial recognition technology. In the game, players can use the position of their eyes to control the character and jump to avoid obstacles. The game retains the core parkour elements of the original Dinosaur game while incorporating modern technology and innovative interactive methods. Uniquely, the game includes interesting sound effects recorded by the author himself, which combined with the interactive features and visual style of the game provide players with a pleasant and interesting game atmosphere. While playing the game, players can not only experience the fun of traditional games, but also feel the charm of machine learning.
+                <h2>Reflection</h2>
+                <p>
+           "Jumping Eyes" shows how technology and creativity can transform classic games to provide players with a whole new experience. Combining the classic parkour gameplay of Google Dinosaur Mini Game with modern facial recognition technology, the game creates a unique gaming environment for players, which is difficult to achieve in traditional games. The author's self-recorded sound effects add a personal touch to the game. These sound effects not only enrich the sensory experience of the game, but also enhance the player's immersion. Through these innovations, the game not only shows players the potential of technology in game design, but also proves that even simple games can become unique and engaging through creativity.
+                 </p>
+            </article>
+        <!-- Portfolio content -->
+    </div>
+    <footer>
+        <p>Matthew's artwork takes a critical view of social, political, and cultural issues. Matthew references public issues, exploring the contradictions between humanity, nature, and science.</p>
+        <p>
+ybai34@pratt.edu&copy; 2023 Matthew Bai</p>
+    </footer>
+
+    <script>
+        // JavaScript for the sidebar
+        const sidebar = document.querySelector('.sidebar');
+        document.addEventListener('mousemove', (e) => {
+            if (e.pageX < 250) { // If mouse is within 50px of the left edge
+                sidebar.style.left = '0';
+            } else {
+                sidebar.style.left = '-250px'; // Adjust as per sidebar width
+            }
+        });
+    </script>
+</body>
+
+</html>
